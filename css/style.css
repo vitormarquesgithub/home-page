@@ -14,10 +14,61 @@
 }
 
 .nav {
+    display: flex;              
+    align-items: center;         
+    list-style: none;     
+    position: fixed;  
+    top: 0;  
+    left: 0;  
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    z-index: 1000;
+}
+
+.nav-left {            
+    justify-content: start;
+    display: flex;  
+    width: 100%; 
+}
+
+.nav-right {              
+    justify-content: end;  
+    display: flex;  
+    width: 100%;
+}
+
+.nav li {
+    padding: 10px;              
+}
+
+.nav a {
+    text-decoration: none;      
+}
+
+.logo-text {
+    position: fixed;       
+    margin-top: 30px;             
+    left: 50%;             
+    transform: translate(-50%, -50%); 
+    cursor: pointer;      
+    font-size: 24px;          
+}
+
+.search-input {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;  
+    top: 20px;  
+    left: 50%;  
+    transform: translate(-50%, -50%); 
+    margin-top: 70px;
+    width: calc(100% - 40px);
+    padding: 10px; 
 }
 
 .header {
-    padding: 20px;
+    margin-bottom: 100px;
 }
 
 .main-content {
@@ -43,10 +94,74 @@
 }
 
 .footer {
+    text-align: center;
     padding: 20px;
 }
 
-@media (max-width: 768px) {
+/* ========================
+   All Buttons
+   ======================== */
+.material-symbols-rounded {
+    cursor: pointer;
+    background-color: white;
+    border: none;
+}
+
+header .drawer {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -100%; 
+    width: 30%;
+    background-color: white;
+    z-index: 1000;
+}
+
+header .drawer-list {
+    list-style: none;     
+}
+
+header .drawer.open {
+    left: 0; 
+}
+
+header .close-button {
+    padding: 10px;
+}
+
+header .menu-button {
+    padding: 10px;
+}
+
+header .bookmark-button {
+    padding: 10px;
+}
+
+header .search-button {
+    padding: 10px;
+    display: none;
+}
+
+header .login-button {
+    padding: 10px;
+    display: none;
+}
+
+/* ========================
+   Responsive Styles
+   ======================== */
+@media (max-width: 800px) {
+    .nav li {
+        display: none;
+    }
+    .drawer-list li {
+        display: block;
+    }
+
+    header .menu-button {
+        display: block;
+    }
+
     .content-row {
         flex-direction: column; 
         gap: 20px; 
