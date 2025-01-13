@@ -13,6 +13,19 @@ closeDrawerBtn.addEventListener('click', () => {
     drawer.classList.remove('open');
 });
 
+document.addEventListener('click', (event) => {
+    if (!drawer.contains(event.target) && !openDrawerBtn.contains(event.target)) {
+        drawer.classList.remove('open');
+    }
+});
+
+window.addEventListener("keydown", function(event) {
+    if (event.key === "Escape") {
+        drawer.classList.remove('open');
+        searchInput.blur(); 
+    }
+});
+
 window.onscroll = function() {
     if (window.scrollY > 300 && !isFocused) {
         searchInput.style.display = "none";
