@@ -1,11 +1,12 @@
 # Basic Homepage
 
-This is a simple homepage built with HTML and CSS.
+This is a simple homepage built with HTML, CSS and JS.
 
 ## Technologies Used
 
 - HTML5
 - CSS3
+- JS
 
 ## Features
 
@@ -19,7 +20,7 @@ Follow these steps to run the project locally:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/repository-name.git
+   git clone https://github.com/vitormarquesgithub/home-page
    ```
 
 2. **Navigate to the project folder:**
@@ -31,8 +32,8 @@ Follow these steps to run the project locally:
 
 ## Usage
 
-You can edit the `index.html` and `styles.css` files to modify the content and design of the homepage.
+You can edit the `index.html`, `style.css` and `script.js` files to modify the content and design of the homepage.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License.
