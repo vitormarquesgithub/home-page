@@ -3,6 +3,7 @@ const closeDrawerBtn = document.getElementById('closeDrawerBtn');
 const drawer = document.getElementById('drawer');
 const searchInput = document.getElementById("searchInput");
 const searchIcon = document.getElementById("searchIcon");
+
 let isFocused = false;
 
 openDrawerBtn.addEventListener('click', () => {

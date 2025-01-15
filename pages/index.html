@@ -1,30 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
+    
     <link rel="stylesheet" href="/css/style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded&display=swap" />
 </head>
+
 <body class="body">
-    <header class="header">
-        <nav class="nav"> 
+    <header>
+        <nav>
             <section class="nav-left">
                 <button id="openDrawerBtn" class="material-symbols-rounded menu-button">menu</button>
+                
                 <aside id="drawer" class="drawer">
                     <ul class="drawer-list">
-                        <li id="closeDrawerBtn"><a class="material-symbols-rounded  button-tile">chevron_backward</a></li>
+                        <li id="closeDrawerBtn">
+                            <a class="material-symbols-rounded button-tile">chevron_backward</a>
+                        </li>
                         <li><a href="#explore" class="button-tile">Explore</a></li>
                         <li><a href="#create" class="button-tile">Create</a></li>
                         <li><a href="#conquer" class="button-tile">Conquer</a></li>
                     </ul>
                 </aside>
+                
                 <li><a href="#explore">Explore</a></li>
                 <li><a href="#create">Create</a></li>
                 <li><a href="#conquer">Conquer</a></li>
             </section>
+            
             <h1 class="logo-text">LOGO SAMPLE</h1>
+            
             <section class="nav-right">
                 <ul>
                     <li><a href="#about">About</a></li>
@@ -35,12 +49,13 @@
                 <button id="searchIcon" class="material-symbols-rounded search-button">search</button>
             </section>
         </nav>
+        
         <input type="text" id="searchInput" class="search-input" placeholder="Search">
     </header>
 
     <main class="main-content">
         <section class="content-primary">
-            <h1>Welcome to Website</h1>
+            <h2>Welcome to Website</h2>
             <p>This is a simple page structure to showcase clean HTML and responsive design. Feel free to explore and learn more about us!</p>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
         </section>
@@ -51,6 +66,7 @@
                 <p>This is the left section. You can put any content here, such as images or more text. It will adapt depending on the screen size.</p>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
             </div>
+            
             <div class="right-row">
                 <h2>Right Section</h2>
                 <p>This is the right section. Similar to the left, this part will resize on smaller screens to ensure the layout is responsive.</p>
@@ -74,11 +90,12 @@
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
         </section>
     </main>
-    
-    <footer class="footer">
+
+    <footer>
         <p>&copy; 2025 Website. All Rights Reserved.</p>
     </footer>
 
     <script src="/js/script.js"></script>
 </body>
+
 </html>

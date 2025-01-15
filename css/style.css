@@ -1,10 +1,15 @@
-* {
+/* ========================
+   Global Styles
+   ======================== */
+   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.body {
+body {
+    font-family: "Rubik", serif;
+    font-style: normal;
     word-wrap: break-word; 
     white-space: normal; 
     display: flex;
@@ -13,7 +18,25 @@
     background-color: white;
 }
 
-.nav {
+header {
+    margin-bottom: 100px;
+}
+
+h2 {
+    font-size: 20px;
+    padding-block: 5px;
+}
+
+footer {
+    text-align: center;
+    font-size: small;
+    padding: 20px;
+}
+
+/* ========================
+   Navigation Styles
+   ======================== */
+nav {
     display: flex;              
     align-items: center;         
     list-style: none;     
@@ -21,7 +44,8 @@
     top: 0;  
     left: 0;  
     width: 100%;
-    padding: 10px;
+    padding-inline: 20px;
+    padding-block: 10px;
     background-color: white;
     z-index: 1000;
 }
@@ -38,15 +62,16 @@
     width: 100%;
 }
 
-.nav li {
+nav li {
     padding: 10px;              
 }
 
-.nav a {
-    text-decoration: none;      
+nav a {
+    text-decoration: none;    
+    color: black;  
 }
 
-.nav ul {
+nav ul {
     display: flex;   
     list-style: none;  
 }
@@ -69,19 +94,24 @@
     transform: translate(-50%, -50%); 
     margin-top: 70px;
     width: calc(100% - 40px);
-    padding: 10px; 
+    padding: 12px;
+    border: none; 
+    background-color: rgb(240, 240, 240);
+    border-radius: 30px;
+    outline: none;
 }
 
-.header {
-    margin-bottom: 100px;
-}
-
+/* ========================
+   Main Content Styles
+   ======================== */
 .main-content {
     flex-grow: 1;
     padding: 20px;
 }
 
 .content-primary {
+    font-size: medium;
+    padding: 10px;
 }
 
 .content-row {
@@ -93,18 +123,17 @@
 
 .left-row, .right-row {
     flex: 1; 
+    font-size: medium;
+    padding: 10px;
 }
 
 .content-secondary {
-}
-
-.footer {
-    text-align: center;
-    padding: 20px;
+    font-size: medium;
+    padding: 10px;
 }
 
 /* ========================
-   All Buttons
+   Button Styles
    ======================== */
 .material-symbols-rounded {
     cursor: pointer;
@@ -135,13 +164,15 @@ header .drawer-list li {
 
 .button-tile {
     display: block;  
-    width: 100%;    
-    padding: 16px;   
+    width: 100%;     
     cursor: pointer; 
     text-decoration: none; 
+    padding: 15px;
+    color: black;
 }
 
 .button-tile:hover {
+    background-color: rgb(240, 240, 240);
 }
 
 header .drawer.open {
@@ -170,9 +201,14 @@ header .login-button {
    Responsive Styles
    ======================== */
 @media (max-width: 800px) {
-    .nav li {
+    nav li {
         display: none;
     }
+
+    header .drawer {
+        width: 40%;
+    }
+
     .drawer-list li {
         display: block;
     }
